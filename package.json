@@ -2,9 +2,10 @@
   "name": "albumcolors",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "public/src/main.jsx",
   "scripts": {
     "dev": "vite",
+    "deploy": "gh-pages -b gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
