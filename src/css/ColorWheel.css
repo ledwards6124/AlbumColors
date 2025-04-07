@@ -2,7 +2,6 @@
   position: relative;
   width: 350px;
   height: 350px;
-  margin: 12.5% auto 3rem;
   animation: spin 30s linear infinite;
   transform-origin: center;
 }
