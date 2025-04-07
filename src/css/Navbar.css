@@ -1,0 +1,62 @@
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+  
+  nav a {
+    color: #e0e0e0;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Base link styles */
+nav a.nav-link {
+    color: #e0e0e0;
+    transition: color 0.3s ease;
+    transition: background-color 0.5s ease;
+
+  }
+
+nav a.nav-link:hover {
+    background-color: #4b4b4b;
+}
+  
+  /* Specific hover color overrides */
+  nav a.nav-link.red:hover {
+    color: #ff0000;
+  }
+  nav a.nav-link.orange:hover {
+    color: #ff7f00;
+  }
+  nav a.nav-link.yellow:hover {
+    color: #ffff00;
+  }
+  nav a.nav-link.green:hover {
+    color: #00ff00;
+  }
+  nav a.nav-link.blue:hover {
+    color: #0000ff;
+  }
+  nav a.nav-link.purple:hover {
+    color: #800080;
+  }
+  nav a.nav-link.white:hover {
+    color: #ffffff;
+  }
+  nav a.nav-link.black:hover {
+    color: #000000;
+  }
+  
+  
