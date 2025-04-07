@@ -14,6 +14,7 @@ import BlackAlbum from './BlackAlbum'
 import WhiteAlbum from './WhiteAlbum'
 
 export default function App() {
+
   return (
     <>
       <Navbar />
