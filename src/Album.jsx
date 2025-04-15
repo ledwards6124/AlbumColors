@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import { motion } from "motion/react"
 import './css/Album.css'
 
 export default function Album({ image, title, songTitle, artist, links, audioSrc }) {
@@ -48,7 +49,11 @@ export default function Album({ image, title, songTitle, artist, links, audioSrc
   
 
   return (
-    <div className="album-wrapper">
+    <motion.div
+    initial={{ y: "100vh" }}
+    animate={{ y: 0 }}
+    transition={{ duration: 0.3, ease: "easeOut" }}
+     className="album-wrapper">
         <div className="album-cover-column">
         <div className="album-cover-container">
             <img
@@ -83,6 +88,6 @@ export default function Album({ image, title, songTitle, artist, links, audioSrc
           ))}
         </nav>
       </div>
-    </div>
+    </motion.div>
   )
 }

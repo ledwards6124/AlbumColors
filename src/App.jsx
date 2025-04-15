@@ -61,13 +61,15 @@ export default function App() {
           artist={redAlbum.artist}
           image={redAlbum.image}
           links={redAlbum.links}
-          audioSrc={redAlbum.audioSrc} />}/>
+          audioSrc={redAlbum.audioSrc} />}
+          />
 
         <Route path="/orange" element={<OrangeAlbum />}/>
         <Route path="/yellow" element={<YellowAlbum />}/>
         <Route path="/green" element={<GreenAlbum />}/>
         <Route path="/blue" element={<BlueAlbum />}/>
         <Route path="/purple" element={<PurpleAlbum />}/>
+
         <Route path="/black" element={
           <BlackAlbum
           title={blackAlbum.title}
@@ -76,6 +78,7 @@ export default function App() {
           image={blackAlbum.image} 
           links={blackAlbum.links}
           audioSrc={blackAlbum.audioSrc}/>}/>
+          
         <Route path="/white" element={<WhiteAlbum />}/>
       </Routes>
     </>
