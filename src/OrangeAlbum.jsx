@@ -1,7 +1,7 @@
 import Album from './Album'
 
-export default function OrangeAlbum({title, writeup, image, color}) {
+export default function OrangeAlbum({title, songTitle, artist, image, links, audioSrc}) {
     return (
-        <Album />
+        <Album title={title} artist={artist} songTitle={songTitle} image={image} links={links} audioSrc={audioSrc}/>
     )
 }

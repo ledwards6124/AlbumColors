@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import { SocialIcon } from 'react-social-icons'
 import { motion } from "motion/react"
 import './css/Album.css'
 
@@ -82,9 +83,10 @@ export default function Album({ image, title, songTitle, artist, links, audioSrc
         <h1 className="album-title">{title}</h1>
         <h2 className="album-artist">{artist}</h2>
         <p>Click the button to preview a 30-second sample.</p>
+        <h2 className='link-box'>Listen for yourself:</h2>
         <nav className="album-links">
           {Object.entries(links).map(([key, value]) => (
-            <a href={value} key={key} target="_blank" rel="noreferrer">{key}</a>
+            <SocialIcon url={value} key={key} target="_blank" rel="noreferrer" style={{filter: 'brightness(1)', transition: 'filter 0.2s ease'}} onMouseEnter={(e) => e.currentTarget.style.filter = 'brightness(0.8)'} onMouseLeave={(e) => e.currentTarget.style.filter = 'brightness(1)'} />
           ))}
         </nav>
       </div>

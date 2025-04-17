@@ -9,6 +9,8 @@ import redCover from './assets/covers/red-album.png'
 import redSample from './assets/audio/red-album.mp3'
 
 import OrangeAlbum from './OrangeAlbum'
+import orangeCover from './assets/covers/orange-album.png'
+
 import YellowAlbum from './YellowAlbum'
 import GreenAlbum from './GreenAlbum'
 import BlueAlbum from './BlueAlbum'
@@ -28,9 +30,9 @@ export default function App() {
     songTitle: 'BUSY / SIRENS',
     image: blackCover,
     links: {
-      spotify: '',
+      spotify: 'https://open.spotify.com/album/1crhG7YecAj6ZN0AAYMYsb?highlight=spotify:track:5m7T46ZFLWKE5YOIN4nW0h',
       itunes: '',
-      youtube: ''
+      youtube: 'https://www.youtube.com/watch?v=zhE-fQU6P9U&list=PLy8w3wlWi4jDxB5NEcSolHpoaCxV2yP1N&ab_channel=SabaPivot'
     },
     audioSrc: blackSample
   }
@@ -41,11 +43,24 @@ export default function App() {
     songTitle: 'XXX.',
     image: redCover,
     links: {
-      spotify: '',
+      spotify: 'https://open.spotify.com/album/4eLPsYPBmXABThSJ821sqY',
       itunes: '',
-      youtube: ''
+      youtube: 'https://www.youtube.com/watch?v=pltUZzEFLR0&list=PLFvR2bZRQluyK8EhHQ1vl4p0Rln3sVoJf&ab_channel=KendrickLamarSpotlight'
     },
     audioSrc: redSample
+  }
+
+  const orangeAlbum = {
+    title: 'channel ORANGE',
+    artist: 'Frank Ocean',
+    songTitle: 'Sweet Life',
+    image: orangeCover,
+    links: {
+      spotify: 'https://open.spotify.com/album/392p3shh2jkxUxY2VHvlH8?highlight=spotify:track:7DfFc7a6Rwfi3YQMRbDMau',
+      itunes: '',
+      youtube: 'https://www.youtube.com/watch?v=xEQ_946TO_g&list=OLAK5uy_mAGTQmYeosOR-Pp17OnnzkKHPeEbzSFOg&ab_channel=FrankOcean-Topic'
+    },
+    audioSrc: ''
   }
 
 
@@ -64,7 +79,15 @@ export default function App() {
           audioSrc={redAlbum.audioSrc} />}
           />
 
-        <Route path="/orange" element={<OrangeAlbum />}/>
+        <Route path="/orange" element={<OrangeAlbum 
+        title={orangeAlbum.title}
+        songTitle={orangeAlbum.songTitle}
+        artist={orangeAlbum.artist}
+        image={orangeAlbum.image}
+        links={orangeAlbum.links}
+        audioSrc={orangeAlbum.audioSrc}
+        />}/>
+
         <Route path="/yellow" element={<YellowAlbum />}/>
         <Route path="/green" element={<GreenAlbum />}/>
         <Route path="/blue" element={<BlueAlbum />}/>
