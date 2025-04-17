@@ -28,6 +28,7 @@ import blackCover from './assets/covers/black-album.png'
 import blackSample from './assets/audio/black-album.mp3'
 
 import WhiteAlbum from './WhiteAlbum'
+import whiteCover from './assets/covers/white-album.png'
 
 export default function App() {
 
@@ -42,6 +43,19 @@ export default function App() {
       youtube: 'https://www.youtube.com/watch?v=zhE-fQU6P9U&list=PLy8w3wlWi4jDxB5NEcSolHpoaCxV2yP1N&ab_channel=SabaPivot'
     },
     audioSrc: blackSample
+  }
+
+  const whiteAlbum = {
+    title: 'Madvilllainy',
+    artist: 'Madvillian (MF DOOM & Madlib)',
+    songTitle: 'Accordion',
+    image: whiteCover,
+    links: {
+      spotify: 'https://open.spotify.com/album/19bQiwEKhXUBJWY6oV3KZk?highlight=spotify:track:1YgDGKyKhFlimPw3mLavPG',
+      itunes: '',
+      youtube: 'https://www.youtube.com/playlist?list=PL9dk_xtWpAkKs1-EKcvq-nKwdaaS-3czd'
+    },
+    audioSrc: ''
   }
 
   const redAlbum = {
@@ -185,16 +199,21 @@ export default function App() {
         links={purpleAlbum.links}
         audioSrc={purpleAlbum.audioSrc}/>}/>
 
-        <Route path="/black" element={
-          <BlackAlbum
-          title={blackAlbum.title}
-          songTitle={blackAlbum.songTitle}
-          artist={blackAlbum.artist} 
-          image={blackAlbum.image} 
-          links={blackAlbum.links}
-          audioSrc={blackAlbum.audioSrc}/>}/>
+        <Route path="/black" element={<BlackAlbum
+        title={blackAlbum.title}
+        songTitle={blackAlbum.songTitle}
+        artist={blackAlbum.artist} 
+        image={blackAlbum.image} 
+        links={blackAlbum.links}
+        audioSrc={blackAlbum.audioSrc}/>}/>
           
-        <Route path="/white" element={<WhiteAlbum />}/>
+        <Route path="/white" element={<WhiteAlbum
+        title={whiteAlbum.title}
+        songTitle={whiteAlbum.songTitle}
+        artist={whiteAlbum.artist} 
+        image={whiteAlbum.image} 
+        links={whiteAlbum.links}
+        audioSrc={whiteAlbum.audioSrc} />}/>
       </Routes>
     </>
   )
