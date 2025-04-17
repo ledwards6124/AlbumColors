@@ -1,7 +1,7 @@
 import Album from './Album'
 
-export default function GreenAlbum({title, writeup, image, color}) {
+export default function GreenAlbum({title, songTitle, artist, image, links, audioSrc}) {
     return (
-        <Album />
+        <Album title={title} songTitle={songTitle} artist={artist} image={image} links={links} audioSrc={audioSrc} />
     )
 }
