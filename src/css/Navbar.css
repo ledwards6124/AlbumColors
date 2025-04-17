@@ -64,7 +64,8 @@ nav a.nav-link:hover {
   /* Make the navbar look better on mobile */
   @media (max-width: 700px) {
     nav {
-      flex-direction: row;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       gap: 0.2rem;
       padding: 0.2rem;
     }
@@ -74,5 +75,22 @@ nav a.nav-link:hover {
       text-align: center;
       font-size: 0.8rem;
     }
+
+  }
+
+  /* Make the navbar look better on tablets */
+  @media (min-width: 701px) and (max-width: 900px) {
+    nav {
+      flex-direction: row;
+      gap: 1rem;
+      padding: 0.5rem;
+    }
+  
+    nav a {
+      width: auto;
+      text-align: start;
+      font-size: 1rem;
+    }
+
   }
   

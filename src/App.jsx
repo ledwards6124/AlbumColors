@@ -13,7 +13,11 @@ import orangeCover from './assets/covers/orange-album.png'
 
 import YellowAlbum from './YellowAlbum'
 import GreenAlbum from './GreenAlbum'
+
+
 import BlueAlbum from './BlueAlbum'
+import blueCover from './assets/covers/blue-album.png'
+
 import PurpleAlbum from './PurpleAlbum'
 
 import BlackAlbum from './BlackAlbum'
@@ -63,6 +67,24 @@ export default function App() {
     audioSrc: ''
   }
 
+  //yellow
+
+  //green
+  
+
+  const blueAlbum = {
+    title: "The Sun's Tirade",
+    artist: 'Isaiah Rashad',
+    songTitle: 'Stuck in the Mud (feat. SZA)',
+    image: blueCover,
+    links: {
+      spotify: 'https://open.spotify.com/album/6jjX8mGrsWtrpYpFhGMrg1?highlight=spotify:track:2RPbEp0DyBVlkRvvYKopO7',
+      itunes: '',
+      youtube: 'https://www.youtube.com/playlist?list=PLC80P4gsPr-Ztf940Zewj7_KFGfDWCSfF'
+    },
+    audioSrc: ''
+  }
+
 
   return (
     <>
@@ -90,7 +112,17 @@ export default function App() {
 
         <Route path="/yellow" element={<YellowAlbum />}/>
         <Route path="/green" element={<GreenAlbum />}/>
-        <Route path="/blue" element={<BlueAlbum />}/>
+
+
+        <Route path="/blue" element={<BlueAlbum
+        title={blueAlbum.title}
+        songTitle={blueAlbum.songTitle}
+        artist={blueAlbum.artist}
+        image={blueAlbum.image}
+        links={blueAlbum.links}
+        audioSrc={blueAlbum.audioSrc} />}/>
+
+
         <Route path="/purple" element={<PurpleAlbum />}/>
 
         <Route path="/black" element={

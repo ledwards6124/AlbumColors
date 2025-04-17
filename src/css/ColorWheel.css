@@ -4,6 +4,9 @@
   height: 350px;
   animation: spin 30s linear infinite;
   transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .dot-wheel {
@@ -12,6 +15,9 @@
   height: 100%;
   border-radius: 50%;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .dot {

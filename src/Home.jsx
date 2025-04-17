@@ -15,7 +15,7 @@ export default function Home() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <ColorWheel />
+          <ColorWheel navigate={navigate}/>
         </motion.div>
       )
 }
