@@ -1,4 +1,4 @@
-
+import './css/Info.css'
 
 export default function Info({overview, themes}) {
 

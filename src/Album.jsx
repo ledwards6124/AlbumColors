@@ -4,7 +4,7 @@ import { motion } from "motion/react"
 import Info from './Info'
 import './css/Album.css'
 
-export default function Album({ image, title, songTitle, artist, links, audioSrc }) {
+export default function Album({ image, title, songTitle, artist, links, audioSrc, overview, themes }) {
   const audioRef = useRef(null)
   const [isPlaying, setIsPlaying] = useState(false)
 
@@ -52,6 +52,7 @@ export default function Album({ image, title, songTitle, artist, links, audioSrc
 
   return (
     <motion.div
+    key={image}
     initial={{ y: "100vh" }}
     animate={{ y: 0 }}
     transition={{ duration: 0.3, ease: "easeOut" }}
@@ -84,7 +85,7 @@ export default function Album({ image, title, songTitle, artist, links, audioSrc
         <h1 className="album-title">{title}</h1>
         <h2 className="album-artist">{artist}</h2>
         <p>Click the button to preview a 30-second sample.</p>
-        <Info overview={'test'} themes={[1,2,3]}/>
+        <Info overview={overview} themes={themes}/>
         <h2 className='link-box'>Listen for yourself:</h2>
         <nav className="album-links">
           {Object.entries(links).map(([key, value]) => {

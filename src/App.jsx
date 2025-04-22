@@ -4,30 +4,24 @@ import { Routes, Route } from 'react-router-dom'
 import Home from './Home'
 import Navbar from './Navbar'
 
-import RedAlbum from './RedAlbum'
+import Album from './Album'
+
 import redCover from './assets/covers/red-album.png'
 import redSample from './assets/audio/red-album.mp3'
 
-import OrangeAlbum from './OrangeAlbum'
 import orangeCover from './assets/covers/orange-album.png'
 
-import YellowAlbum from './YellowAlbum'
 import yellowCover from './assets/covers/yellow-album.png'
 
-import GreenAlbum from './GreenAlbum'
 import greenCover from './assets/covers/green-album.png'
 
-import BlueAlbum from './BlueAlbum'
 import blueCover from './assets/covers/blue-album.png'
 
-import PurpleAlbum from './PurpleAlbum'
 import purpleCover from './assets/covers/purple-album.png'
 
-import BlackAlbum from './BlackAlbum'
 import blackCover from './assets/covers/black-album.png'
 import blackSample from './assets/audio/black-album.mp3'
 
-import WhiteAlbum from './WhiteAlbum'
 import whiteCover from './assets/covers/white-album.png'
 
 export default function App() {
@@ -42,7 +36,9 @@ export default function App() {
       itunes: 'https://music.apple.com/us/album/care-for-me/1756822263',
       youtube: 'https://www.youtube.com/watch?v=zhE-fQU6P9U&list=PLy8w3wlWi4jDxB5NEcSolHpoaCxV2yP1N&ab_channel=SabaPivot'
     },
-    audioSrc: blackSample
+    audioSrc: blackSample,
+    overview: '',
+    themes: []
   }
 
   const whiteAlbum = {
@@ -55,7 +51,9 @@ export default function App() {
       itunes: '',
       youtube: 'https://www.youtube.com/playlist?list=PL9dk_xtWpAkKs1-EKcvq-nKwdaaS-3czd'
     },
-    audioSrc: ''
+    audioSrc: '',
+    overview: '',
+    themes: []
   }
 
   const redAlbum = {
@@ -68,7 +66,9 @@ export default function App() {
       itunes: 'https://music.apple.com/us/album/damn/1440881047',
       youtube: 'https://www.youtube.com/watch?v=pltUZzEFLR0&list=PLFvR2bZRQluyK8EhHQ1vl4p0Rln3sVoJf&ab_channel=KendrickLamarSpotlight'
     },
-    audioSrc: redSample
+    audioSrc: redSample,
+    overview: '',
+    themes: []
   }
 
   const orangeAlbum = {
@@ -81,7 +81,9 @@ export default function App() {
       itunes: 'https://music.apple.com/us/album/channel-orange/1440765580',
       youtube: 'https://www.youtube.com/watch?v=xEQ_946TO_g&list=OLAK5uy_mAGTQmYeosOR-Pp17OnnzkKHPeEbzSFOg&ab_channel=FrankOcean-Topic'
     },
-    audioSrc: ''
+    audioSrc: '',
+    overview: '',
+    themes: []
   }
 
   //yellow
@@ -95,7 +97,9 @@ export default function App() {
       itunes: 'https://music.apple.com/us/album/niagara/1527340332',
       youtube: 'https://www.youtube.com/watch?v=TBOv1C-Z-JM&list=PL3r1ldjYHlYOW_h96z2Uc52LVFlBKmnXB&ab_channel=redveil-Topic'
     },
-    audioSrc: ''
+    audioSrc: '',
+    overview: '',
+    themes: []
   }
 
   //green
@@ -109,7 +113,9 @@ export default function App() {
       itunes: 'https://music.apple.com/us/album/bando-stone-and-the-new-world/1757678472',
       youtube: 'https://www.youtube.com/playlist?list=PLYuz75ZV-NPCXTa16m4_9uuiEKlAwZfZq'
     },
-    audioSrc: ''
+    audioSrc: '',
+    overview: '',
+    themes: []
   }
   
 
@@ -123,7 +129,9 @@ export default function App() {
       itunes: 'https://music.apple.com/us/album/the-suns-tirade/1149506748',
       youtube: 'https://www.youtube.com/playlist?list=PLC80P4gsPr-Ztf940Zewj7_KFGfDWCSfF'
     },
-    audioSrc: ''
+    audioSrc: '',
+    overview: '',
+    themes: []
   }
 
   const purpleAlbum = {
@@ -136,7 +144,9 @@ export default function App() {
       itunes: "https://music.apple.com/us/album/orqu%C3%ADdeas-parte-2/1761264602",
       youtube: "https://www.youtube.com/playlist?list=OLAK5uy_kRWlYWQFxkCLGYwzrJjF4hDjgeYoAdR8Y"
     },
-    audioSrc: ""
+    audioSrc: "",
+    overview: '',
+    themes: []
   }
 
 
@@ -146,74 +156,85 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />}/>
 
-        <Route path="/red" element={<RedAlbum
+        <Route path="/red" element={<Album
           title={redAlbum.title}
           songTitle={redAlbum.songTitle}
           artist={redAlbum.artist}
           image={redAlbum.image}
           links={redAlbum.links}
-          audioSrc={redAlbum.audioSrc} />}
-          />
+          audioSrc={redAlbum.audioSrc}
+          overview={redAlbum.overview}
+          themes={redAlbum.themes} />}/>
 
-        <Route path="/orange" element={<OrangeAlbum 
+        <Route path="/orange" element={<Album 
         title={orangeAlbum.title}
         songTitle={orangeAlbum.songTitle}
         artist={orangeAlbum.artist}
         image={orangeAlbum.image}
         links={orangeAlbum.links}
         audioSrc={orangeAlbum.audioSrc}
-        />}/>
+        overview={orangeAlbum.overview}
+        themes={orangeAlbum.themes} />}/>
 
-        <Route path="/yellow" element={<YellowAlbum 
+        <Route path="/yellow" element={<Album 
         title={yellowAlbum.title}
         songTitle={yellowAlbum.songTitle}
         artist={yellowAlbum.artist}
         image={yellowAlbum.image}
         links={yellowAlbum.links}
-        audioSrc={yellowAlbum.audioSrc}/>}/>
+        audioSrc={yellowAlbum.audioSrc}
+        overview={yellowAlbum.overview}
+        themes={yellowAlbum.themes} />}/>
 
-
-        <Route path="/green" element={<GreenAlbum 
+        <Route path="/green" element={<Album 
         title={greenAlbum.title}
         songTitle={greenAlbum.songTitle}
         artist={greenAlbum.artist}
         image={greenAlbum.image}
         links={greenAlbum.links}
-        audioSrc={greenAlbum.audioSrc}/>}/>
+        audioSrc={greenAlbum.audioSrc}
+        overview={greenAlbum.overview}
+        themes={greenAlbum.themes} />}/>
 
-
-        <Route path="/blue" element={<BlueAlbum
+        <Route path="/blue" element={<Album
         title={blueAlbum.title}
         songTitle={blueAlbum.songTitle}
         artist={blueAlbum.artist}
         image={blueAlbum.image}
         links={blueAlbum.links}
-        audioSrc={blueAlbum.audioSrc} />}/>
+        audioSrc={blueAlbum.audioSrc}
+        overview={blueAlbum.overview}
+        themes={blueAlbum.themes} />}/>
 
-
-        <Route path="/purple" element={<PurpleAlbum 
+        <Route path="/purple" element={<Album
         title={purpleAlbum.title}
         songTitle={purpleAlbum.songTitle}
         artist={purpleAlbum.artist}
         image={purpleAlbum.image}
         links={purpleAlbum.links}
-        audioSrc={purpleAlbum.audioSrc}/>}/>
+        audioSrc={purpleAlbum.audioSrc}
+        overview={purpleAlbum.overview}
+        themes={purpleAlbum.themes} />}/>
 
-        <Route path="/black" element={<BlackAlbum
+        <Route path="/black" element={<Album
         title={blackAlbum.title}
         songTitle={blackAlbum.songTitle}
-        artist={blackAlbum.artist} 
-        image={blackAlbum.image} 
+        artist={blackAlbum.artist}
+        image={blackAlbum.image}
         links={blackAlbum.links}
-        audioSrc={blackAlbum.audioSrc}/>}/>
-          
-        <Route path="/white" element={<WhiteAlbum
+        audioSrc={blackAlbum.audioSrc}
+        overview={blackAlbum.overview}
+        themes={blackAlbum.themes} />}/>
+
+        <Route path="/white" element={<Album
         title={whiteAlbum.title}
         songTitle={whiteAlbum.songTitle}
-        artist={whiteAlbum.artist} 
-        image={whiteAlbum.image} 
+        artist={whiteAlbum.artist}
+        image={whiteAlbum.image}
         links={whiteAlbum.links}
-        audioSrc={whiteAlbum.audioSrc} />}/>
+        audioSrc={whiteAlbum.audioSrc}
+        overview={whiteAlbum.overview}
+        themes={whiteAlbum.themes} />}/>
       </Routes>
     </>
   )
