@@ -17,6 +17,7 @@ export default function ColorWheel({navigate}) {
   const radius = 180 // distance from center
 
   return (
+    <>
     <div className="wheel-rotator">
       <div className="dot-wheel">
         {colors.map((color, i) => {
@@ -28,7 +29,7 @@ export default function ColorWheel({navigate}) {
               key={i}
               className="dot"
               style={{
-                 transform: `rotate(${angle}deg) translate(${radius}px) rotate(-${angle}deg)`,
+                 transform: `rotate(${angle}deg) translate(${radius}px)`,
               }}
               onClick={() => navigate(`${links[i]}`)}
             />
@@ -36,5 +37,7 @@ export default function ColorWheel({navigate}) {
         })}
       </div>
     </div>
+    </>
   )
+
 }

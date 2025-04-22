@@ -39,7 +39,7 @@ export default function App() {
     image: blackCover,
     links: {
       spotify: 'https://open.spotify.com/album/1crhG7YecAj6ZN0AAYMYsb?highlight=spotify:track:5m7T46ZFLWKE5YOIN4nW0h',
-      itunes: '',
+      itunes: 'https://music.apple.com/us/album/care-for-me/1756822263',
       youtube: 'https://www.youtube.com/watch?v=zhE-fQU6P9U&list=PLy8w3wlWi4jDxB5NEcSolHpoaCxV2yP1N&ab_channel=SabaPivot'
     },
     audioSrc: blackSample
@@ -65,7 +65,7 @@ export default function App() {
     image: redCover,
     links: {
       spotify: 'https://open.spotify.com/album/4eLPsYPBmXABThSJ821sqY',
-      itunes: '',
+      itunes: 'https://music.apple.com/us/album/damn/1440881047',
       youtube: 'https://www.youtube.com/watch?v=pltUZzEFLR0&list=PLFvR2bZRQluyK8EhHQ1vl4p0Rln3sVoJf&ab_channel=KendrickLamarSpotlight'
     },
     audioSrc: redSample
@@ -78,7 +78,7 @@ export default function App() {
     image: orangeCover,
     links: {
       spotify: 'https://open.spotify.com/album/3wINP6SbT7TqiaYGo3Lj8f',
-      itunes: '',
+      itunes: 'https://music.apple.com/us/album/channel-orange/1440765580',
       youtube: 'https://www.youtube.com/watch?v=xEQ_946TO_g&list=OLAK5uy_mAGTQmYeosOR-Pp17OnnzkKHPeEbzSFOg&ab_channel=FrankOcean-Topic'
     },
     audioSrc: ''
@@ -92,7 +92,7 @@ export default function App() {
     image: yellowCover,
     links: {
       spotify: 'https://open.spotify.com/album/6jjX8mGrsWtrpYpFhGMrg1?highlight=spotify:track:2RPbEp0DyBVlkRvvYKopO7',
-      itunes: '',
+      itunes: 'https://music.apple.com/us/album/niagara/1527340332',
       youtube: 'https://www.youtube.com/watch?v=TBOv1C-Z-JM&list=PL3r1ldjYHlYOW_h96z2Uc52LVFlBKmnXB&ab_channel=redveil-Topic'
     },
     audioSrc: ''
@@ -106,7 +106,7 @@ export default function App() {
     image: greenCover,
     links: {
       spotify: 'https://open.spotify.com/album/4yUqNSK6jMi7Y6eWl03U5r?highlight=spotify:track:61wsDs3Dbb11h1m2tw9eMZ',
-      itunes: '',
+      itunes: 'https://music.apple.com/us/album/bando-stone-and-the-new-world/1757678472',
       youtube: 'https://www.youtube.com/playlist?list=PLYuz75ZV-NPCXTa16m4_9uuiEKlAwZfZq'
     },
     audioSrc: ''
@@ -120,7 +120,7 @@ export default function App() {
     image: blueCover,
     links: {
       spotify: 'https://open.spotify.com/album/6jjX8mGrsWtrpYpFhGMrg1?highlight=spotify:track:2RPbEp0DyBVlkRvvYKopO7',
-      itunes: '',
+      itunes: 'https://music.apple.com/us/album/the-suns-tirade/1149506748',
       youtube: 'https://www.youtube.com/playlist?list=PLC80P4gsPr-Ztf940Zewj7_KFGfDWCSfF'
     },
     audioSrc: ''
@@ -133,7 +133,7 @@ export default function App() {
     image: purpleCover,
     links: {
       spotify: "https://open.spotify.com/album/1quQQFsx3AcBBotzj9UXfS?highlight=spotify:track:2xQIb4ZLQLAiWAZejlmOoR",
-      itunes: "",
+      itunes: "https://music.apple.com/us/album/orqu%C3%ADdeas-parte-2/1761264602",
       youtube: "https://www.youtube.com/playlist?list=OLAK5uy_kRWlYWQFxkCLGYwzrJjF4hDjgeYoAdR8Y"
     },
     audioSrc: ""

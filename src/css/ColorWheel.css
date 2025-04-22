@@ -4,9 +4,6 @@
   height: 350px;
   animation: spin 30s linear infinite;
   transform-origin: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .dot-wheel {
@@ -15,17 +12,14 @@
   height: 100%;
   border-radius: 50%;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .dot {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100px;
-  height: 100px;
+  top: 45%;
+  left: 40%;
+  width: 35%;
+  height: 35%;
   margin: -30px;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -34,7 +28,7 @@
 }
 
 .dot:hover {
-  transform: scale(1.1);
+  transform: scale(1.5);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 

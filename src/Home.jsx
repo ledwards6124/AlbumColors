@@ -9,13 +9,19 @@ export default function Home() {
     const navigate = useNavigate();
 
     return (
-        <motion.div
-          className="color-wrapper"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          <ColorWheel navigate={navigate}/>
-        </motion.div>
+    <>
+      <motion.div
+        className="color-wrapper"
+        initial={{ y: "100vh" }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.3, ease: "easeOut" }}
+      >
+        <div className="background">
+          <h1>Pick a color!</h1>
+
+          <ColorWheel navigate={navigate} />
+        </div>
+      </motion.div>
+    </>
       )
 }
