@@ -9,8 +9,8 @@ export default function Info({overview, themes}) {
             <p>{overview}</p>
             <h2>Key Themes: </h2>
             <ul>
-                {themes.map((key, value) => (
-                    <li>{value}</li>
+                {themes.map((theme, index) => (
+                    <li>{theme}</li>
                 ))}
             </ul>
         </div>

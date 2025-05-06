@@ -37,8 +37,12 @@ export default function App() {
       youtube: 'https://www.youtube.com/watch?v=zhE-fQU6P9U&list=PLy8w3wlWi4jDxB5NEcSolHpoaCxV2yP1N&ab_channel=SabaPivot'
     },
     audioSrc: blackSample,
-    overview: '',
-    themes: []
+    overview: 'Care for Me is Saba’s 2018 album, heavily influenced by the grief of losing his close friend, Walter Long Jr. The album addresses themes of loss, mental health, and personal growth, combining soulful production with raw, vulnerable lyrics that reflect Saba’s emotional journey through pain and healing.',
+    themes: [
+      "Grief and Loss: Deals with the impact of losing a close friend and the pain of mourning.",
+      "Mental Health and Vulnerability: Saba addresses depression, anxiety, and feelings of isolation.",
+      "Self-Reflection and Healing: The album portrays Saba’s emotional journey toward personal healing and growth."
+    ]
   }
 
   const whiteAlbum = {
@@ -52,8 +56,12 @@ export default function App() {
       youtube: 'https://www.youtube.com/playlist?list=PL9dk_xtWpAkKs1-EKcvq-nKwdaaS-3czd'
     },
     audioSrc: '',
-    overview: '',
-    themes: []
+    overview: 'Madvillainy is the 2004 album by MF DOOM and Madlib, known for its abstract lyricism and minimalist production. The album challenges traditional hip-hop conventions, with cryptic lyrics and lo-fi beats that encourage personal interpretation. It became a cult classic for its unique style and artistic innovation.',
+    themes: [
+      "Minimalism and Ambiguity: The album’s abstract lyrics and minimalist production encourage personal interpretation.",
+      "Artistry and Wordplay: Emphasis on complex rhyme schemes and intricate lyricism.",
+      "Listener Empowerment: Invites the audience to engage deeply, drawing their own meanings from the cryptic lyrics."
+    ]
   }
 
   const redAlbum = {
@@ -67,8 +75,12 @@ export default function App() {
       youtube: 'https://www.youtube.com/watch?v=pltUZzEFLR0&list=PLFvR2bZRQluyK8EhHQ1vl4p0Rln3sVoJf&ab_channel=KendrickLamarSpotlight'
     },
     audioSrc: redSample,
-    overview: '',
-    themes: []
+    overview: 'DAMN. is Kendrick Lamar’s fourth studio album, released in 2017. The album explores themes of morality, self-identity, and societal pressures through intricate lyrics and diverse production. It addresses Lamar’s internal conflicts with fame, sin, and redemption, earning widespread acclaim, including the Pulitzer Prize for Music in 2018.',
+    themes: [
+      "Moral Conflict: Explores the tension between right and wrong, redemption, and the struggles of living with one’s choices.",
+      "Self-Reflection and Growth: Lamar delves into his identity, fame, and internal battles.",
+      "Anger and Redemption: Confronts anger and guilt while seeking self-improvement and forgiveness."
+    ]
   }
 
   const orangeAlbum = {
@@ -82,8 +94,12 @@ export default function App() {
       youtube: 'https://www.youtube.com/watch?v=xEQ_946TO_g&list=OLAK5uy_mAGTQmYeosOR-Pp17OnnzkKHPeEbzSFOg&ab_channel=FrankOcean-Topic'
     },
     audioSrc: '',
-    overview: '',
-    themes: []
+    overview: 'channel ORANGE is Frank Ocean’s debut album, released in 2012, blending R&B, soul, and pop. It explores themes of love, heartbreak, and self-discovery, with Ocean openly addressing his experiences with same-sex love. The album was lauded for its vulnerability, creativity, and its genre-defying approach.',
+    themes: [
+      "Love and Heartbreak: Explores both the euphoric and painful aspects of love.",
+      "Sexual Identity and Self-Discovery: A groundbreaking reflection on Frank Ocean’s own experiences with same-sex love.",
+      "Escapism and Reality: The album delves into escaping the pain of reality through materialism, fantasy, and self-doubt."
+    ]
   }
 
   //yellow
@@ -98,8 +114,12 @@ export default function App() {
       youtube: 'https://www.youtube.com/watch?v=TBOv1C-Z-JM&list=PL3r1ldjYHlYOW_h96z2Uc52LVFlBKmnXB&ab_channel=redveil-Topic'
     },
     audioSrc: '',
-    overview: '',
-    themes: []
+    overview: 'Niagara is redveil’s second album, released in 2020. The album features introspective lyrics and lo-fi beats, exploring themes of mental health, self-discovery, and personal growth. Redveil self-produced and mixed most of the tracks, showcasing his raw, vulnerable approach to music.',
+    themes: [
+      "Mental Health: Tackles emotional struggles and vulnerability.",
+      "Coming-of-Age: Focuses on self-discovery and growth.",
+      "Resilience and Change: Expresses a desire for personal and societal transformation."
+    ]
   }
 
   //green
@@ -114,8 +134,12 @@ export default function App() {
       youtube: 'https://www.youtube.com/playlist?list=PLYuz75ZV-NPCXTa16m4_9uuiEKlAwZfZq'
     },
     audioSrc: '',
-    overview: '',
-    themes: []
+    overview: 'Bando Stone & The New World is Childish Gambino’s final album, released alongside a film of the same name in July 2024. The album blends alternative R&B, hip-hop, and pop, following the post-apocalyptic journey of a musician, Bando Stone, seeking redemption and personal growth in a dystopian world.',
+    themes: [
+      "Survival in a Collapsing World: The protagonist faces both physical and emotional challenges.",
+      "Personal Growth: Bando Stone’s journey of self-discovery and redemption.",
+      "Cultural Critique: Reflections on societal collapse, fame, and human connection."
+    ]
   }
   
 
@@ -130,8 +154,12 @@ export default function App() {
       youtube: 'https://www.youtube.com/playlist?list=PLC80P4gsPr-Ztf940Zewj7_KFGfDWCSfF'
     },
     audioSrc: '',
-    overview: '',
-    themes: []
+    overview: 'Released in 2016, The Sun’s Tirade is Isaiah Rashad’s second album, which delves into themes of mental health, addiction, and personal growth. Through introspective lyrics and soulful production, Rashad reflects on his struggles and his journey toward emotional healing, receiving praise for its depth and vulnerability.',
+    themes: [
+      "Mental Health: Explores depression, anxiety, and addiction.",
+      "Addiction and Escapism: Confronts substance abuse as both a form of escape and a destructive force.",
+      "Growth and Self-Reflection: Focuses on Rashad’s journey toward emotional healing and self-discovery."
+    ]
   }
 
   const purpleAlbum = {
@@ -145,8 +173,12 @@ export default function App() {
       youtube: "https://www.youtube.com/playlist?list=OLAK5uy_kRWlYWQFxkCLGYwzrJjF4hDjgeYoAdR8Y"
     },
     audioSrc: "",
-    overview: '',
-    themes: []
+    overview: 'Orquídeas Parte 2 is Kali Uchis’ follow-up album to Isolation, blending R&B, Latin influences, and dreamlike production. The album explores love, heartbreak, and self-discovery, while also embracing Uchis’ Latin heritage. It marks a continuation of her emotional growth and empowerment through both personal and cultural themes.',
+    themes: [
+      "Love and Heartbreak: Reflects on the complexities of love and the emotional pain that accompanies it.",
+      "Self-Discovery and Empowerment: Focuses on Uchis' journey of self-realization and embracing her individuality.",
+      "Cultural Identity: Celebrates her Colombian heritage while embracing both personal and cultural growth."
+    ]
   }
 
 
